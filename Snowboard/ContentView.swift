@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showHome = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                Image("bg-landing")
+                    .resizable()
+                    .background(.gray)
+                    .opacity(0.6)
+                
+                
+                VStack {
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Text("Get The\nSnowBoard\nExperience In\n A New Way")
+                        .fontWeight(.bold)
+                        .font(.title)
+                        .padding(.bottom, 50)
+                        .fixedSize(horizontal: true, vertical: false)
+                    
+                    NavigationLink {
+                        Home()
+                    } label: {
+                        Text("Get Started")
+                            .frame(width: 200, height: 50)
+                            .background(.white)
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                    }
+                    Spacer()
+                }
+            }.ignoresSafeArea()
         }
-        .padding()
     }
 }
 

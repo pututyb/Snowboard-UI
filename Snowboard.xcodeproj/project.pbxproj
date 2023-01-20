@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		08B5965F297B1EF600A1E19C /* SnowboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B5965E297B1EF600A1E19C /* SnowboardApp.swift */; };
 		08B59661297B1EF600A1E19C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B59660297B1EF600A1E19C /* ContentView.swift */; };
-		08B59663297B1EF800A1E19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B59662297B1EF800A1E19C /* Assets.xcassets */; };
 		08B59666297B1EF800A1E19C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B59665297B1EF800A1E19C /* Preview Assets.xcassets */; };
+		08B5966E297B29FD00A1E19C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B5966D297B29FD00A1E19C /* Home.swift */; };
+		08B59670297B384100A1E19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B5966F297B384100A1E19C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08B5965B297B1EF600A1E19C /* Snowboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snowboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B5965E297B1EF600A1E19C /* SnowboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowboardApp.swift; sourceTree = "<group>"; };
 		08B59660297B1EF600A1E19C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		08B59662297B1EF800A1E19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B59665297B1EF800A1E19C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08B5966D297B29FD00A1E19C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		08B5966F297B384100A1E19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,10 @@
 		08B5965D297B1EF600A1E19C /* Snowboard */ = {
 			isa = PBXGroup;
 			children = (
+				08B5966C297B29F100A1E19C /* Views */,
 				08B5965E297B1EF600A1E19C /* SnowboardApp.swift */,
 				08B59660297B1EF600A1E19C /* ContentView.swift */,
-				08B59662297B1EF800A1E19C /* Assets.xcassets */,
+				08B5966F297B384100A1E19C /* Assets.xcassets */,
 				08B59664297B1EF800A1E19C /* Preview Content */,
 			);
 			path = Snowboard;
@@ -65,6 +68,14 @@
 				08B59665297B1EF800A1E19C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08B5966C297B29F100A1E19C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08B5966D297B29FD00A1E19C /* Home.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B59670297B384100A1E19C /* Assets.xcassets in Resources */,
 				08B59666297B1EF800A1E19C /* Preview Assets.xcassets in Resources */,
-				08B59663297B1EF800A1E19C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08B59661297B1EF600A1E19C /* ContentView.swift in Sources */,
+				08B5966E297B29FD00A1E19C /* Home.swift in Sources */,
 				08B5965F297B1EF600A1E19C /* SnowboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
