@@ -32,17 +32,39 @@ struct Home: View {
                     .clipShape(Circle())
                     .padding(.trailing)
             }
+            HStack {
+                TabView  {
+                    Image("ski-google")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .padding()
+                    
+                    Image("ski-google")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .padding()
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                    .frame(height: 200)
+            }
             
             HStack {
-                Spacer()
-                Image("ski-google")
-                    .resizable()
-                    .renderingMode(.original)
-                    .frame(width: 330, height: 200)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                Spacer()
+                Text("Events")
+                    .frame(maxWidth: .infinity, maxHeight: 100)
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    .padding()
+                Text("Statistics")
+                    .frame(maxWidth: .infinity, maxHeight: 100)
+                    .foregroundColor(.white)
+                    .background(.gray)
+                    .cornerRadius(15)
+                    .padding()
             }
+            
             Spacer()
+    
         }
         .navigationBarBackButtonHidden(true)
     }
